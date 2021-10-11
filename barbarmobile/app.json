@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "barbarmobile",
+    "slug": "barbarmobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "barbarmobile"
+}
