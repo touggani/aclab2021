@@ -8,6 +8,9 @@ export default function App() {
   return (
     <View style={styles.texte}>
       <Text >TAB!</Text>
+      <Text >POST</Text>
+      <Text >date</Text>
+      <Text >desc</Text>
     </View>
   );
 }
