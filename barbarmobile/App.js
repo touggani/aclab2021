@@ -23,7 +23,10 @@ export default function App() {
       </View>
       <View style={{flex:2}}>        
         <Pressable style={styles.buttonConnexion} onPress={on}>
-          <Text style={styles.text}>Connexion</Text>
+        <Text style={styles.text}>Connexion</Text>
+        {/* <Route exact path="/">
+          <Home />
+      </Route> */}
         </Pressable>
         <Pressable style={styles.buttonConnexion} onPress={on}>
           <Text style={styles.text}>S'inscrire</Text>
