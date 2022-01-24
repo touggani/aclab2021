@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image, Pressable, Alert  } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import Home from './screens/Home.js'
 import BottomNavigator from './components/BottomNavigator';
 
 
