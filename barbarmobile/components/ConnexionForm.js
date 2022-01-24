@@ -1,14 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, SafeAreaView, TextInput } from 'react-native';
 
 
 
-
-export default function App() {
+export default function Home() {
+  console.log("Home")
   return (
-    <View >
-      <Text style={styles.texte}>TAB!</Text>
-    </View>
+    <SafeAreaView>
+      <TextInput
+        style={styles.input}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="useless placeholder"
+        keyboardType="numeric"
+      />
+    </SafeAreaView>
   );
 }
 
@@ -18,5 +25,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#AEED',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  input:{
+    width: 10,
+    alignContent: 'center'
   }
 });
