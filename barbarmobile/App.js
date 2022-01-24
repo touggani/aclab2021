@@ -4,15 +4,35 @@ import { StyleSheet, Text, View, Image, Pressable, Alert  } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './screens/Home.js'
+import ConnexionForm from "./components/ConnexionForm"
 import BottomNavigator from './components/BottomNavigator';
+import Animated from 'react-native-reanimated';
+import { render } from 'react-dom';
 
 
 const Tab = createBottomTabNavigator();
+let car = "https://freepngimg.com/thumb/car/2-2-car-transparent.png"
 
 export default function App() {
   function on(){
     alert("Connexion");
   }
+
+  state = {
+
+    moveAnimation: new Animated.Value(0)
+  }
+  _move= () => {
+    Animated.timing(this.state.moveAnimation, {
+      toValue: 300,
+      timing:1000
+    }).start()
+  }
+
+  render(){
+    moveAnimationS
+  }
+
   return (
     /*<BottomNavigator/>*/
     <View style={[styles.mainContainer,styles.container, styles.flexColumn]}>
@@ -23,16 +43,13 @@ export default function App() {
       </View>
       <View style={{flex:2}}>        
         <Pressable style={styles.buttonConnexion} onPress={on}>
-        <Text style={styles.text}>Connexion</Text>
-        {/* <Route exact path="/">
-          <Home />
-      </Route> */}
+          <Text onPress={() => this.swipeUpDownRef.showFull()} style={styles.text}>Connexion</Text>
         </Pressable>
         <Pressable style={styles.buttonConnexion} onPress={on}>
           <Text style={styles.text}>S'inscrire</Text>
         </Pressable>
       </View>
-      
+
     </View>
 
   );
@@ -48,8 +65,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 300,
-    height: 300,
+    width: 200,
+    height: 200,
     
   },
   flexColumn:{
@@ -58,7 +75,7 @@ const styles = StyleSheet.create({
   buttonConnexion:{
     width: 350,
     backgroundColor:'#D64E4E',
-    padding: 20,
+    padding: 15,
     borderRadius: 30,
     margin: 10
   },
