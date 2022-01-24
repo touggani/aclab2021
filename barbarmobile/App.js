@@ -18,20 +18,20 @@ export default function App() {
     alert("Connexion");
   }
 
-  state = {
+  // state = {
 
-    moveAnimation: new Animated.Value(0)
-  }
-  _move= () => {
-    Animated.timing(this.state.moveAnimation, {
-      toValue: 300,
-      timing:1000
-    }).start()
-  }
+  //   moveAnimation: new Animated.Value(0)
+  // }
+  // _move= () => {
+  //   Animated.timing(this.state.moveAnimation, {
+  //     toValue: 300,
+  //     timing:1000
+  //   }).start()
+  // }
 
-  render(){
-    moveAnimationS
-  }
+  // render(){
+  //   moveAnimationS
+  // }
 
   return (
     /*<BottomNavigator/>*/
